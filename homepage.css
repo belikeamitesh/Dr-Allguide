@@ -1,0 +1,163 @@
+.human-body {
+	width: 100%;
+	position: relative;
+	padding-top: 240px;
+	height: 260px;
+	margin-top: 6rem;
+}
+
+.human-body svg:hover {
+	cursor: pointer;
+}
+
+.human-body svg:hover path {
+	fill: orange;
+}
+
+.human-body svg {
+	position: absolute;
+	left: 75%;
+	fill: #57c9d5;
+}
+
+.human-body svg#head {
+	margin-left: -28.5px;
+	top: -6px;
+}
+
+.human-body svg#left-shoulder {
+	margin-left: -53.5px;
+	top: 69px;
+}
+
+.human-body svg#right-shoulder {
+	margin-left: 13.5px;
+	top: 69px;
+}
+
+.human-body svg#left-arm {
+	margin-left: -78px;
+	top: 112px;
+}
+
+.human-body svg#right-arm {
+	margin-left: 38px;
+	top: 112px;
+	z-index: 3;
+}
+
+.human-body svg#chest {
+	margin-left: -43.5px;
+	top: 88px;
+}
+
+.human-body svg#stomach {
+	margin-left: -37.5px;
+	top: 130px;
+}
+
+.human-body svg#left-leg {
+	margin-left: -46.5px;
+	top: 205px;
+	z-index: 1;
+}
+
+.human-body svg#right-leg {
+	margin-left: 1.5px;
+	top: 205px;
+	z-index: 1;
+}
+
+.human-body svg#left-hand {
+	margin-left: -102.5px;
+	top: 224px;
+}
+
+.human-body svg#right-hand {
+	margin-left: 66.5px;
+	top: 224px;
+	z-index: 2;
+}
+
+.human-body svg#left-foot {
+	margin-left: -35.5px;
+	top: 455px;
+}
+
+.human-body svg#right-foot {
+	margin-left: 5.5px;
+	top: 455px;
+}
+
+#area {
+	text-align: end;
+	font-size: large;
+	margin-top: 250px;
+	padding: 2rem;
+}
+
+#data {
+	color: black;
+	padding-inline: 1rem;
+}
+
+#checkboxes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.form-check > label {
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	background-color: lightcyan;
+	border-color: darkslategray;
+}
+
+.form-check:hover > input[type="checkbox"] {
+	border-color: orange;
+}
+
+input[type="checkbox"]:checked {
+	background-color: orange;
+	border: none;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	margin-bottom: 2rem;
+}
+
+footer {
+	background: darkslategray;
+	color: lightblue;
+	padding: 2rem;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.social > a {
+	font-size: xx-large;
+	color: lightblue;
+}
+
+.social > a:hover {
+	color: lightcyan;
+}
+
+.copyright {
+	text-align: center;
+}

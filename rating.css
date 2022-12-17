@@ -1,0 +1,102 @@
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: 0 0.25rem 0.5rem gray;
+	border-radius: 2rem;
+	padding: 2rem;
+}
+
+.container .post {
+	display: none;
+}
+
+.container .edit {
+	position: absolute;
+	right: 2rem;
+	top: 5px;
+	cursor: pointer;
+}
+
+.container .edit:hover {
+	text-decoration: underline;
+}
+
+.container .star-widget input {
+	display: none;
+}
+
+.star-widget label {
+	font-size: xx-large;
+	float: right;
+	transition: all 0.2s ease;
+	padding: 0.9rem;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+	color: orange;
+}
+input:checked ~ label {
+	color: orange;
+}
+input#rate-5:checked ~ label {
+	color: orange;
+}
+#rate-1:checked ~ form header:before {
+	content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before {
+	content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before {
+	content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before {
+	content: "I just like it ";
+}
+#rate-5:checked ~ form header:before {
+	content: "I just love it ";
+}
+
+input:checked ~ form {
+	display: block;
+}
+form header {
+	width: 100%;
+	font-size: 25px;
+	color: orange;
+	font-weight: 500;
+	margin: 5px 0 20px 0;
+	text-align: center;
+	transition: all 0.2s ease;
+}
+
+form .textarea {
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+}
+
+form .textarea textarea {
+	color: inherit;
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 1rem;
+	padding: 10px;
+	font-size: 17px;
+	resize: none;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+}
